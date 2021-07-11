@@ -1,0 +1,57 @@
+@import "../../styles/_variables";
+
+.categories {
+    position: relative;
+    overflow: hidden;
+    background: #fff;
+    z-index: 5;
+
+    ul {
+        display: flex;
+        flex-direction: row;
+        list-style: none;
+        text-align: start;
+        margin: 0;
+        padding: 0;
+
+        li {
+            margin-right: 5px;
+            width: 100px;
+            padding: 10px;
+            cursor: pointer;
+            font-style: normal;
+            font-weight: normal;
+            font-size: 18px;
+            line-height: 24px;
+            border-bottom: 2px solid #fff;
+            &:hover {
+                color: #9d9d9d;
+            }
+            a {
+                padding-bottom: 8px;
+                &.active {
+                    border-bottom: 3px solid $red;
+
+                }
+            }
+        }
+    }
+
+    &--sticky {
+        position: fixed;
+        top: 0;
+        width: 100%;
+        transition: all 0.5s ease;
+        animation: smoothScroll 1s forwards;
+    }
+}
+
+@keyframes smoothScroll {
+    0% {
+      transform: translateY(-142px);
+    }
+   
+    100% {
+      transform: translateY(0px);
+    }
+  }

@@ -1,0 +1,9 @@
+export { default as Header } from './Header';
+export { default as DeliveryForm } from './DeliveryForm';
+export { default as Categories } from './Categories';
+export { default as Products } from './Products';
+export { default as ProductCard } from './ProductCard';
+export { default as CountBtns } from './CountBtns';
+export { default as Footer } from './Footer';
+export { default as Section } from './Section';
+export { default as Social } from './Social';

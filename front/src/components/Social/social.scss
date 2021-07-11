@@ -1,0 +1,24 @@
+.social-block {
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    margin: 120px 0 75px 0;
+
+    &__hiden {
+        width: 283px;
+    }
+
+    &__media {
+        img {
+            margin: 0 20px 0 20px;
+        }
+    }
+
+    &__stores {
+        margin-right: 50px;
+        img {
+            margin-left: 16px;
+        }
+    }
+}

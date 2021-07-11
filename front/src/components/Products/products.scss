@@ -1,0 +1,29 @@
+@import "../../styles/_variables";
+
+.products-block {
+    overflow-y: auto;
+
+    
+    &__category {
+        display: flex;
+        flex-direction: row;
+        background: $gray;
+        flex-wrap: wrap;
+        padding: 0 84px 50px 84px;
+        
+        &--even {
+            background: #fff;
+        }
+        
+        &-name {
+            width: 100%;
+            font-style: normal;
+            font-weight: normal;
+            font-size: 32px;
+            line-height: 40px;
+            margin: 40px  0 10px 12px;
+        }
+
+    }
+
+}
