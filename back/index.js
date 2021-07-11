@@ -1,7 +1,8 @@
 const express = require("express");
 const { createServer } = require("http");
+const path = require('path');
 
-const PORT = process.env.PORT || "3003";
+const PORT = process.env.PORT || 3003;
 
 const indexRouter = require("./routes/index");
 
@@ -23,7 +24,8 @@ app.use(function (req, res, next) {
 });
 
 app.use(express.json());
-app.use(express.static('./public'));
+app.use(express.static(path.join(__dirname, 'public')));
+app.use(express.static(path.join(__dirname, 'front/build')));
 
 app.use("/", indexRouter);
 

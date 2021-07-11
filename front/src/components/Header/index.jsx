@@ -60,7 +60,7 @@ const Header = ({
                                 ? "header__delivery-buttons-btn active"
                                 : "header__delivery-buttons-btn"
                         }
-                        onClick={onSelfDelivery}>
+                        onClick={() => {onSelfDelivery(); setTooltipVisible(false);}}>
                         Самовывоз
                     </button>
                 </div>

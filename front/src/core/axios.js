@@ -1,6 +1,6 @@
 import axios from "axios";
 
-axios.defaults.baseURL = "http://localhost:3003";
+axios.defaults.baseURL = window.location.origin;
 
 window.axios = axios;
 

@@ -5,7 +5,8 @@
   "main": "index.js",
   "scripts": {
     "start": "node index",
-    "devstart": "nodemon index"
+    "devstart": "nodemon index",
+    "heroku-postbuild": "cd front && npm install && npm run build"
   },
   "keywords": [],
   "author": "",
