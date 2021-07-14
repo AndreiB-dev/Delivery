@@ -6,7 +6,19 @@
     height: 360px;
     width: 288px;
     border-radius: 8px;
-    margin: 0 12px 0 12px;
+    margin: 0 12px 12px 12px;
+    @media screen and (max-width: 720px) {
+        margin: auto;
+    }
+    
+
+    &--active {
+        background: #fff;
+    }
+
+    &--active-even {
+        background: $gray;
+    }
 
     &__picture {
         display: flex;

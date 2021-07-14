@@ -16,7 +16,7 @@ const Categories = ({
                 sticky.isSticky ? " categories--sticky" : ""
             }`}
             ref={headerRef}>
-            <div style={{ marginLeft: 87 }}>
+            <div className="categories__tabs" >
                 <ul>
                     {categories &&
                         categories.map((item, i) => (

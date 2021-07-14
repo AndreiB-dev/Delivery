@@ -17,9 +17,9 @@ const ProductCard = ({
     onMinus,
     cart,
     manualEffect,
+    categoryId,
 }) => {
     const [count, setCount] = React.useState(0);
-
     React.useEffect(() => {
         let inCart = cart.find((item) => item.id === id);
         if (inCart) {
@@ -30,7 +30,7 @@ const ProductCard = ({
     }, [cart, manualEffect, id]);
 
     return (
-        <div className="product-card">
+        <div className={`product-card ${count && (categoryId % 2 !== 0 ?  "product-card--active" : "product-card--active-even")}`} >
             <div className="product-card__picture">
                 {status ? (
                     status === "new" ? (

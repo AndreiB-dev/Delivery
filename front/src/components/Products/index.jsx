@@ -49,6 +49,7 @@ const Products = ({
                                           cart={cart}
                                           manualEffect={manualEffect}
                                           setCount={setCount}
+                                          categoryId={category.id}
                                       />
                                   ))
                             : category.products.map((product) => (
@@ -63,6 +64,7 @@ const Products = ({
                                       cart={cart}
                                       manualEffect={manualEffect}
                                       setCount={setCount}
+                                      categoryId={category.id}
                                   />
                               ))}
                     </div>

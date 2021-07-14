@@ -6,6 +6,18 @@
     background: #fff;
     z-index: 15;
 
+    &__tabs {
+        margin-left: 87px;
+
+        @media screen and (max-width: 540px) {
+            margin-left: 0;
+        }
+
+        @media screen and (max-width: 720px) {
+            margin-left: 28px;
+        }
+    }
+
     ul {
         display: flex;
         flex-direction: row;
@@ -19,11 +31,19 @@
             width: 100px;
             padding: 10px;
             cursor: pointer;
-            font-style: normal;
-            font-weight: normal;
             font-size: 18px;
             line-height: 24px;
             border-bottom: 2px solid #fff;
+
+            @media screen and (max-width: 480px) {
+                font-size: 14px;
+                width: auto;
+            }
+
+            @media screen and (max-width: 720px) {
+                width: auto;
+            }
+
             &:hover {
                 color: #9d9d9d;
             }
@@ -31,7 +51,6 @@
                 padding-bottom: 8px;
                 &.active {
                     border-bottom: 3px solid $red;
-
                 }
             }
         }
@@ -48,10 +67,10 @@
 
 @keyframes smoothScroll {
     0% {
-      transform: translateY(-142px);
+        transform: translateY(-142px);
     }
-   
+
     100% {
-      transform: translateY(0px);
+        transform: translateY(0px);
     }
-  }
+}
